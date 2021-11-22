@@ -1,0 +1,161 @@
+@font-face {
+  font-family: LeMurmure; 
+  src: url(fonts/le_murmure.ttf);
+}
+@font-face{
+  font-family: Graphik;
+  src:url(fonts/GraphikFont/Graphik-Light.ttf)
+}
+
+body {
+  background-color: black;
+  max-width: 1920px;
+}
+
+
+html {
+  margin: 50px;
+}
+
+
+ul, p, div, h2 {
+  color: white;
+  font-family: "Graphik";
+}
+
+
+li {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 10px;
+  padding-right: none;
+
+}
+
+a {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  text-decoration: none;
+  color: white;
+  font-family: "Graphik";
+  font-size: 20px; 
+  background-color: black;
+}
+
+a:hover {
+  background-color: chocolate;
+  padding: 10px;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+  font-family: "LeMurmure";
+  line-height: 1;
+}
+
+h2{
+  padding-top: 20px;
+}
+.asterisco {
+  justify-content: left;
+
+}
+
+#asterisco {
+  width: 110px;
+  padding: 10px;
+
+   -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+header {
+  margin-top: 80px;
+}
+
+header div{
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+nav {
+  display: block;
+}
+
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  border:none;
+  background-color: white;
+}
+.navbar-toggler .navbar-toggler-icon{
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.offcanvas-title {
+  color: black;
+}
+
+.offcanvas-body {
+  height: 10px;
+}
+
+.navbar-light .navbar-nav .nav-item a {
+  color: white;
+}
+
+section {
+  padding: 0;
+}
+
+section ul {
+  padding: 0;
+}
+
+section #iconos {
+
+  overflow: hidden;
+  padding: 20px;
+  flex-wrap: wrap;  
+  align-items: flex-end;
+}
+
+
+section #iconos a {
+  background-color: pink;
+  margin: 10px;
+  padding:10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section #iconos a img {
+  width: 25px;
+}
+section #iconos a:hover {
+  background-color: chocolate;
+}
